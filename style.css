@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+body {
+    background-image: url(https://www.pixel4k.com/wp-content/uploads/2018/10/landscape-outdoor-mountains-galaxy-4k_1540143436.jpg);
+    background-size: cover;
+    padding: 0; /* Remove default padding */
+    color: #decba4;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0; /* Remove default margin */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Fit the image within the container without distortion */
+}
